@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gheotxx - Webx</title>
+    
+    <!-- Información para la vista previa del link (Open Graph) -->
+    <meta property="og:title" content="Gheotxx ⭑ Webx">
+    <meta property="og:description" content="Hazlo todo con miedo si no, no. Siempre trabajando en nuevas cosasss...">
+    <meta property="og:image" content="https://i.imgur.com/GPjRHPe.png">
+    <meta property="og:url" content="https://gheotxx.github.io/">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="icon" type="image/png" href="https://i.imgur.com/haAh0CU.png">
+
+    <!-- Fuentes y librerías de estilo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Estilos personalizados para animaciones y efectos visuales -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d0d;
+        }
+        .card-bg {
+            background-color: rgba(16, 16, 16, 0.58);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .glow-border:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        .spotify-container {
+            border-radius: 0.75rem; /* rounded-xl */
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* shadow-md */
+        }
+    </style>
+</head>
+<body class="text-neutral-300 min-h-screen flex flex-col items-center justify-center p-4 md:p-10 font-inter">
+
+    <!-- Contenedor principal de la página con efecto de "vidrio esmerilado" -->
+    <main class="card-bg w-full max-w-4xl rounded-2xl border border-zinc-900 shadow-2xl transition-all duration-300 hover:border-zinc-700/50">
+
+        <!-- Banner y sección de perfil unificados -->
+        <div class="relative">
+            <img 
+                src="https://i.imgur.com/Z0BmQjN.gif" 
+                alt="Banner del portafolio" 
+                class="w-full h-48 object-cover object-center rounded-t-2xl"
+            />
+            <div class="absolute -bottom-16 left-1/2 transform -translate-x-1/2 flex flex-col items-center">
+                <img 
+                    src="https://i.imgur.com/GPjRHPe.png" 
+                    alt="Foto de perfil de Gheotxx" 
+                    class="w-32 h-32 rounded-full border-4 border-zinc-900 shadow-2xl transition-transform duration-500 hover:scale-110" 
+                />
+            </div>
+        </div>
+        
+        <!-- Contenido principal debajo del banner -->
+        <div class="pt-20 pb-8 px-4 md:px-8 text-center flex flex-col items-center">
+            <h1 class="text-3xl font-bold text-white mb-2">Gheotxx ⭑ Webx</h1>
+            <p class="text-lg text-neutral-400">Estudiante de Ingeniería en Software | Desarrollador en proceso</p>
+            <p class="text-neutral-400 leading-relaxed mt-4 max-w-2xl">
+                Siempre trabajando en nuevas cosasss... 
+                Mi objetivo es combinar la estética con la funcionalidad para construir experiencias digitales únicas.
+            </p>
+        </div>
+
+        <hr class="border-t border-zinc-800 my-8 w-11/12 mx-auto" />
+
+        <!-- Sección de Proyectos -->
+        <section class="p-4 md:p-8">
+            <h2 class="text-2xl font-bold text-white mb-6 text-center flex items-center justify-center gap-2">
+                <img src="https://i.imgur.com/7lG4CsP.png" alt="Icono de Proyectos" class="w-6 h-6" /> Proyectos
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Tarjeta de Proyecto 1 -->
+                <a href="https://github.com/gheotxx" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl border border-zinc-900 shadow-lg flex flex-col items-center text-center transition-all duration-300 hover:bg-zinc-900 hover:border-zinc-700/50 glow-border">
+                    <img src="https://i.imgur.com/dLwNv3u.png" alt="Icono de Roblox Cleaner App" class="w-12 h-12 mb-4 transition-transform duration-300 group-hover:scale-110" />
+                    <h3 class="text-lg font-bold text-white mb-2">Roblox Cleaner App</h3>
+                    <p class="text-sm text-neutral-400">Una herramienta en C# para limpiar exploits en Roblox.</p>
+                </a>
+                <!-- Tarjeta de Proyecto 2 -->
+                <a href="https://jamurdme.github.io/" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl border border-zinc-900 shadow-lg flex flex-col items-center text-center transition-all duration-300 hover:bg-zinc-900 hover:border-zinc-700/50 glow-border">
+                    <img src="https://i.imgur.com/eY47wpV.png" alt="Icono de Prácticas Web" class="w-12 h-12 mb-4 transition-transform duration-300 group-hover:scale-110" />
+                    <h3 class="text-lg font-bold text-white mb-2">Prácticas Web</h3>
+                    <p class="text-sm text-neutral-400">Recopilación de mis proyectos iniciales en HTML, CSS y JS.</p>
+                </a>
+                <!-- Tarjeta de Proyecto 3 -->
+                <a href="https://github.com/gheotxx" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl border border-zinc-900 shadow-lg flex flex-col items-center text-center transition-all duration-300 hover:bg-zinc-900 hover:border-zinc-700/50 glow-border">
+                    <img src="https://i.imgur.com/hhHvNPQ.png" alt="Icono de Apps en Progreso" class="w-12 h-12 mb-4 transition-transform duration-300 group-hover:scale-110" />
+                    <h3 class="text-lg font-bold text-white mb-2">Apps en Progreso</h3>
+                    <p class="text-sm text-neutral-400">Proyectos en desarrollo con C# y XAML.</p>
+                </a>
+            </div>
+        </section>
+
+        <hr class="border-t border-zinc-800 my-8 w-11/12 mx-auto" />
+
+        <!-- Sección de Contacto -->
+        <section class="p-4 md:p-8">
+            <h2 class="text-2xl font-bold text-white mb-4 text-center flex items-center justify-center gap-2">
+                <img src="https://i.imgur.com/VeaC9zj.png" alt="Icono de Redes" class="w-6 h-6" /> Mis Redes y Música
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 w-full">
+                 <!-- Sección de Música -->
+                <div class="flex flex-col items-center text-center md:items-start md:text-left col-span-2">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-2">
+                         <img src="https://i.imgur.com/N521bE1.png" alt="Icono de Spotify" class="w-5 h-5" /> Mi Música
+                    </h3>
+                    <div class="spotify-container w-full border border-zinc-800">
+                        <!-- Código del embed de Spotify proporcionado por el usuario -->
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3tTpvK7QgjjQCKGnHt5xn3?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <!-- GitHub -->
+                <a href="https://github.com/gheotxx" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-xl border border-zinc-900 transition-colors duration-300 hover:bg-zinc-900 hover:border-zinc-700/50">
+                    <img src="https://i.imgur.com/hQFzfVf.png" alt="Icono de GitHub" class="w-8 h-8" />
+                    <span class="text-white font-medium">GitHub</span>
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/gheotxx/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-xl border border-zinc-900 transition-colors duration-300 hover:bg-zinc-900 hover:border-zinc-700/50">
+                    <img src="https://i.imgur.com/Mb8Y7aV.png" alt="Icono de Instagram" class="w-8 h-8" />
+                    <span class="text-white font-medium">Instagram</span>
+                </a>
+                <!-- Discord -->
+                <a href="https://discord.com/users/768296797121675286" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-xl border border-zinc-900 transition-colors duration-300 hover:bg-zinc-900 hover:border-zinc-700/50">
+                    <img src="https://i.imgur.com/VcShOut.png" alt="Icono de Discord" class="w-8 h-8" />
+                    <span class="text-white font-medium">Discord</span>
+                </a>
+                <!-- Roblox -->
+                <a href="https://www.roblox.com/users/3682686031/profile" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-xl border border-zinc-900 transition-colors duration-300 hover:bg-zinc-900 hover:border-zinc-700/50">
+                    <img src="https://i.imgur.com/mqkEKvd.png" alt="Icono de Roblox" class="w-8 h-8" />
+                    <span class="text-white font-medium">Roblox</span>
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
